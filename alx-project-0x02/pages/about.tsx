@@ -1,19 +1,19 @@
-import Head from "next/head";
-import Header from "@/components/layout/Header";
+"use client";
+import React from "react";
+import Button from "../components/common/Button";
 
-export default function AboutPage() {
+const AboutPage = () => {
   return (
-    <>
-      <Head>
-        <title>About | SoloForge</title>
-      </Head>
-      <Header />
-      <main className="flex flex-col items-center justify-center h-screen text-center">
-        <h1 className="text-3xl font-bold">About This Project 📖</h1>
-        <p className="mt-4 text-gray-600">
-          SoloForge is a learning project built with Next.js, TypeScript, and Tailwind CSS.
-        </p>
-      </main>
-    </>
+    <div className="p-6">
+      <h1 className="text-3xl font-bold mb-6">About Page</h1>
+
+      <div className="flex gap-4">
+        <Button label="Small Button" size="small" shape="rounded-sm" />
+        <Button label="Medium Button" size="medium" shape="rounded-md" />
+        <Button label="Large Button" size="large" shape="rounded-full" />
+      </div>
+    </div>
   );
-}
+};
+
+export default AboutPage;
