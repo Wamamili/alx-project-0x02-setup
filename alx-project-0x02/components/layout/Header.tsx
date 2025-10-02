@@ -6,6 +6,9 @@ const Header = () => {
       <h1 className="text-xl font-bold">SoloForge</h1>
       <nav className="space-x-4">
         <Link href="/" className="hover:underline">
+          Main
+        </Link>
+        <Link href="/home" className="hover:underline">
           Home
         </Link>
         <Link href="/about" className="hover:underline">
